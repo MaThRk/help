@@ -1,0 +1,9 @@
+#' Save ggplot to multiple devices
+#' 
+#' @importFrom ggplot2 ggsave
+
+sgg = function(f=NULL, dev=NULL, ...){
+  
+  sapply(dev, function(x){ggsave(paste0(f, ".", x), ...)})
+   
+}
