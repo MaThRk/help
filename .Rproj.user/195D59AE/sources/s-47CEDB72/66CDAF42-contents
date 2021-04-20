@@ -1,6 +1,8 @@
 #' Save ggplot to multiple devices
 #'
 #' @importFrom ggplot2 ggsave
+#'
+#' @export
 
 sgg = function(f=NULL, dev=NULL, ...){
 
