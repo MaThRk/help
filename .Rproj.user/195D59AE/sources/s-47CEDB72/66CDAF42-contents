@@ -8,4 +8,5 @@ sgg = function(f=NULL, dev=NULL, ...){
 
   sapply(dev, function(x){ggsave(paste0(f, ".", x), ...)})
 
+  return(NULL)
 }
