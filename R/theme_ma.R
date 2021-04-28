@@ -13,6 +13,8 @@ theme_ma = function(base_size = 13, base_family = "Times", title_size = 18,
       panel.grid.minor = element_blank(),
       axis.title = element_text(size = base_size),
       plot.title = element_text(size = title_size, hjust = .5),
-      plot.subtitle = element_text(size = subtitle_size, hjust = .5, face = "italic")
+      plot.subtitle = element_text(size = subtitle_size, hjust = .5, face = "italic"),
+      strip.background = element_rect(fill="transparent"),
+      strip.text = element_text(size = base_size, face = "italic")
     )
 }
