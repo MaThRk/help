@@ -2,5 +2,6 @@
 
 export(savegg)
 export(theme_ma)
+export(wr)
 importFrom(ggplot2,ggsave)
 importFrom(ggplot2,theme_light)
