@@ -33,7 +33,7 @@ seasons = function(date){
     date_2000 = as.Date(strftime(date, format = "2000-%m-%d"))
 
     # classify
-    season = ifelse(date_2000 > winter & date_2000 < spring, "Winter",
+    season = ifelse(date_2000 > winter & date_2000 < spring, "winter",
            ifelse(date_2000 > spring & date_2000 < summer, "Spring",
                   ifelse(date_2000 > summer & date_2000 < fall, "summer",
                          ifelse(date_2000 > fall & date_2000 < winter2001, "fall", "winter"))))
