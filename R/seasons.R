@@ -5,7 +5,7 @@
 seasons = function(date){
 
     # if not of class date, check whether it is an integer from 1-12
-  if (!inherits(date, "Date") | inherits(date, "POSIXct")) {
+  if (inherits(date, "Date") | inherits(date, "POSIXct")) {
     d = TRUE
     break
 
@@ -46,7 +46,6 @@ seasons = function(date){
                     ifelse(m %in% 4:6, "spring",
                            ifelse(m %in% 7:9, "summer",
                                   "fall")))
-
 
 
 
