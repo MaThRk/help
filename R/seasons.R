@@ -6,10 +6,8 @@ seasons = function(date){
 
     # if not of class date, check whether it is an integer from 1-12
   if (inherits(date, "Date") | inherits(date, "POSIXct")) {
-    d = TRUE
-    break
-
-    if (class %in% 1:12) {
+    d = TRUE} else{
+    if (date %in% 1:12) {
       d = FALSE
     } else{
       stop("The date has to be either an integer from 1:12 or an object of class date")
@@ -17,13 +15,14 @@ seasons = function(date){
   }
 
 
-  # -------------------------------------------------------------------------
+
   # classify
 
-  winter = as.Date("2000-12-21")
+  winter = as.Date("1999-12-21")
   spring = as.Date("2000-3-21")
   summer = as.Date("2000-6-21")
   fall = as.Date("2000-9-22")
+  winter2001 = as.Date("2000-12-21")
 
 
 
@@ -36,7 +35,8 @@ seasons = function(date){
     # classify
     season = ifelse(date_2000 > winter & date_2000 < spring, "Winter",
            ifelse(date_2000 > spring & date_2000 < summer, "Spring",
-                  ifelse(date_2000 > summer & date_2000 < fall, "summer", "fall")))
+                  ifelse(date_2000 > summer & date_2000 < fall, "summer",
+                         ifelse(date_2000 > fall & date_2000 < winter2001, "fall", "winter"))))
 
 
   }else{ # classify based on the month
