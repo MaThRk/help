@@ -1,4 +1,4 @@
-# More or LESS pretty formatted linear model output
+# More or LESS pretty formated linear model output
 
 
 #' @export
@@ -6,7 +6,7 @@
 ann_reg = function(x, digits = 2){
 
   intercept = round(coef(x)[[1]],digits)
-  slope = round(coef(x)[[2]], digits)
+  slope = round(coef(x)[[2]], 5)
 
   if(!inherits(x, "lm")){ # for the quantile regression case
     text = paste0("Y = ", intercept, " + ", slope, " * X")
