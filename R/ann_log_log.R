@@ -4,7 +4,7 @@
 #' @export
 #'
 
-ann_log_log = function(log_log_model, base){
+ann_log_log = function(log_log_model, base, digits = 2){
 
   # take the log-log model and create the equation y(x) = kx^n
   # where
@@ -13,10 +13,10 @@ ann_log_log = function(log_log_model, base){
 
   # check if the base is the natural log
   if (base == "e") {
-    k = round(exp(coef(log_log_model)[[1]]), 2)
+    k = round(exp(coef(log_log_model)[[1]]), digits)
     n = round(coef(log_log_model)[[2]], 2)
   } else{
-    k = round(base ^ (coef(log_log_model)[[1]]), 2)
+    k = round(base ^ (coef(log_log_model)[[1]]), digits)
     n = round(coef(log_log_model)[[2]], 2)
   }
 
