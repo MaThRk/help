@@ -4,7 +4,7 @@
 \alias{ann_log_log}
 \title{Formatting of the exponential function}
 \usage{
-ann_log_log(log_log_model, base)
+ann_log_log(log_log_model, base, digits = 2)
 }
 \description{
 Formatting of the exponential function
