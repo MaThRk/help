@@ -27,4 +27,5 @@ cap_3 = function(){
 #' export
 cap_15 = function(){
   s = "**p15** (precipitation in the 15 days prior to p3) [mm]"
+  return(s)
 }
