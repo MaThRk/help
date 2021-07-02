@@ -1,5 +1,8 @@
 #' Get the geology of South Tyrol for an object of class sf
 #'
+#'
+#' @importFrom sf st_crs st_transform st_intersects
+#'
 #' @export
 #'
 
