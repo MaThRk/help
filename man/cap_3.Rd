@@ -2,12 +2,10 @@
 % Please edit documentation in R/cap.R
 \name{cap_3}
 \alias{cap_3}
-\title{p3 string
-export}
+\title{p3 string}
 \usage{
 cap_3()
 }
 \description{
 p3 string
-export
 }
