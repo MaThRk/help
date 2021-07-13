@@ -4,7 +4,9 @@
 #' @export
 #'
 #'
-make_dirs = function(dirs) {
+make_dirs = function(...) {
+
+  dirs = list(...)
 
   for (x in dirs) {
 
