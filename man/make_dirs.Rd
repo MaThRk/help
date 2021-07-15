@@ -4,7 +4,7 @@
 \alias{make_dirs}
 \title{Make directories if not yet existing}
 \usage{
-make_dirs(dirs)
+make_dirs(...)
 }
 \description{
 Make directories if not yet existing
