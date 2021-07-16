@@ -18,14 +18,22 @@ cap = function(n_dry = NULL, daily_thresh = NULL){
 
 #' p3 string
 #' @export
-cap_3 = function(){
-  s = "**p3** (precipitation in the the days prior to the slide) [mm]"
-  return(s)
+cap_3 = function(md = T) {
+  if (md) {
+    s = "**p3** (precipitation in the the days prior to the slide) [mm]"
+    return(s)
+  } else{
+    s = "p3 (precipitation in the the days prior to the slide) [mm]"
+  }
 }
 
 #' p3 string
 #' @export
-cap_15 = function(){
-  s = "**p15** (precipitation in the 15 days prior to p3) [mm]"
-  return(s)
+cap_15 = function(md = T) {
+  if (md) {
+    s = "**p15** (precipitation in the 15 days prior to p3) [mm]"
+    return(s)
+  } else{
+    s = "p15 (precipitation in the 15 days prior to p3) [mm]"
+  }
 }
