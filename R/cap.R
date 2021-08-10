@@ -23,7 +23,7 @@ cap_3 = function(md = T) {
     s = "**p3** (precipitation in the the days prior to the slide) [mm]"
     return(s)
   } else{
-    s = "p3 (precipitation in the the days prior to the slide) [mm]"
+    s = "p3 (precipitation three days prior to the slide) [mm]"
   }
 }
 
