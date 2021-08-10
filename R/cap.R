@@ -31,9 +31,9 @@ cap_3 = function(md = T) {
 #' @export
 cap_15 = function(md = T) {
   if (md) {
-    s = "**p15** (precipitation in the 15 days prior to p3) [mm]"
+    s = "**p15** (precipitation 15 days prior to p3) [mm]"
     return(s)
   } else{
-    s = "p15 (precipitation in the 15 days prior to p3) [mm]"
+    s = "p15 (precipitation 15 days prior to p3) [mm]"
   }
 }
