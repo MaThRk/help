@@ -20,10 +20,10 @@ cap = function(n_dry = NULL, daily_thresh = NULL){
 #' @export
 cap_3 = function(md = T) {
   if (md) {
-    s = "**p3** (precipitation three days prior to the slide) [mm]"
+    s = "**p3** (precipitation three days before landslide) [mm]"
     return(s)
   } else{
-    s = "p3 (precipitation three days prior to the slide) [mm]"
+    s = "p3 (precipitation three days before landslide) [mm]"
   }
 }
 
